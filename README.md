@@ -20,7 +20,7 @@ Hands-on building automation and controls projects, built and documented as I mo
 |---|---|
 | Multi-zone optimum start/stop | Planned |
 | Duty/standby pump rotation | In progress |
-| PID loop with anti-hunt | Planned |
+| PID loop with anti-hunt (OpenTherm boiler control, see plant monitoring) | Planned |
 | Plant state machine and interlocks | Planned |
 | [Fault diagnosis case study – Evohome permanent 5 °C override](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration#4-part-c--fault-case-study-the-permanent-5-c-override) | ✅ Complete |
 | Trend IQ411 commissioning | Planned |
@@ -35,8 +35,9 @@ Hands-on building automation and controls projects, built and documented as I mo
 | [BACnet/IP network explorer](https://github.com/the-control-cabinet/bacnet-ip-network-explorer) | ✅ Complete |
 | [Fire & CO alarm interface – Aico Ei413 → Shelly → HA](https://github.com/the-control-cabinet/aico-ei413-shelly-ha) | ✅ Complete |
 | [Evohome heating controls & HA integration (cloud → RAMSES-II, incl. fault case study)](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) | ✅ Complete (roadmap open) |
-| Heating plant-room monitoring (boiler CT, BDR91 opto inputs, pressures, temperatures) | In progress |
+| [Heating plant monitoring – boiler, cylinders, safety devices (ESPHome)](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | 🚧 In progress |
 | [Portable aircon – Tuya data-point map, local control](https://github.com/the-control-cabinet/localtuya-portable-aircon-dp-map) | ✅ Complete |
 | [ESP32 BLE presence network](https://github.com/the-control-cabinet/esp32-ble-presence-network) | ✅ Live |
 | [Zigbee network migration – ZHA → Zigbee2MQTT (93 devices)](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) | ✅ Complete |
 | [RTL-SDR RF survey – 433/868 MHz](https://github.com/the-control-cabinet/rtl-sdr-rf-exploration) | ✅ Exploratory (ADS-B planned) |
+| Water sub-metering by event detection (shower, washing machine) | Next |
