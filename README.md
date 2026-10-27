@@ -36,3 +36,7 @@ Hands-on building automation and controls projects, built and documented as I mo
 | [Fire & CO alarm interface – Aico Ei413 → Shelly → HA](https://github.com/the-control-cabinet/aico-ei413-shelly-ha) | ✅ Complete |
 | [Evohome heating controls & HA integration (cloud → RAMSES-II, incl. fault case study)](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) | ✅ Complete (roadmap open) |
 | Heating plant-room monitoring (boiler CT, BDR91 opto inputs, pressures, temperatures) | In progress |
+| [Portable aircon – Tuya data-point map, local control](https://github.com/the-control-cabinet/localtuya-portable-aircon-dp-map) | ✅ Complete |
+| [ESP32 BLE presence network](https://github.com/the-control-cabinet/esp32-ble-presence-network) | ✅ Live |
+| [Zigbee network migration – ZHA → Zigbee2MQTT (93 devices)](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) | ✅ Complete |
+| [RTL-SDR RF survey – 433/868 MHz](https://github.com/the-control-cabinet/rtl-sdr-rf-exploration) | ✅ Exploratory (ADS-B planned) |
