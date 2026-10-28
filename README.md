@@ -19,6 +19,28 @@
 | [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | Plant-room points list, signal conditioning, boiler state detection; the measurement layer for the OpenTherm control design |
 | [Mains water metering – Modbus RTU](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) | Modbus RTU field device, calibration against measured volumes, metering dashboards |
 
+## Heating controls: delivery sequence
+
+The heating work is delivered as a staged programme, like a BMS upgrade: **measure first**, then build the supervisory layer and its first function, then change the plant control, with each step measured against the last.
+
+```mermaid
+flowchart LR
+    A["A · Plant monitoring<br/>+ on/off baseline"] --> B["B · Supervisory layer<br/>HA + Node-RED"]
+    B --> C["C · Optimum start/stop"]
+    D["D · PID rig exercise<br/>+ interlocks (parallel)"] --> E
+    C --> E["E · OpenTherm on the boiler<br/>weather comp + PID + preheat boost"]
+    E --> F["F · Before/after report<br/>(M&V)"]
+```
+
+| Step | Project | Status |
+|---|---|---|
+| A | [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | 🚧 In progress |
+| B | [HA + Node-RED supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) | 🚧 In progress (design) |
+| C | [Multi-zone optimum start/stop](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) | 📐 Design stage |
+| D | [PID with anti-hunt: rig exercise](https://github.com/the-control-cabinet/pid-anti-hunt-control-rig) | 📐 Design stage |
+| E | [OpenTherm boiler control](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) | 📐 Design stage |
+| F | [Energy dashboard: before/after report](https://github.com/the-control-cabinet/home-energy-dashboard) | 📐 Planned |
+
 ## Skills matrix: BMS competencies mapped to evidence
 
 | Competency | Where it's shown |
@@ -27,14 +49,16 @@
 | **Modbus (RTU / TCP)** | [Water metering](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Modbus TCP collector](https://github.com/the-control-cabinet/modbus-tcp-data-collector) |
 | **BACnet/IP** | [BACnet/IP explorer](https://github.com/the-control-cabinet/bacnet-ip-network-explorer) |
 | **HVAC controls** | [Evohome](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) · [Plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) · [OpenTherm control](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) · [Air quality / DCV](https://github.com/the-control-cabinet/indoor-air-quality-monitoring) |
-| **Control strategy (PID, weather compensation, interlocks)** | [OpenTherm control](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) |
+| **Control strategy (PID, weather compensation, interlocks)** | [OpenTherm control](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) · [PID rig exercise](https://github.com/the-control-cabinet/pid-anti-hunt-control-rig) |
+| **Supervisory control and scheduling** | [Supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) · [Optimum start/stop](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) |
+| **Measurement and verification (M&V)** | [Energy dashboard](https://github.com/the-control-cabinet/home-energy-dashboard) · [Optimum start/stop](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) · [OpenTherm control](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) |
 | **Commissioning and test records** | Every project: test tables, calibration runs, transmit audits · plans: [OpenTherm 12-test plan](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) · [BLE receiver calibration](https://github.com/the-control-cabinet/esp32-ble-presence-network) |
 | **Fault diagnosis** | [5 °C override case study](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) · [Water meter calibration](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Zigbee availability noise](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [ESPHome watchdog resets](https://github.com/the-control-cabinet/esp32-ble-presence-network) |
 | **Life-safety interfaces** | [Fire/CO interface](https://github.com/the-control-cabinet/aico-ei413-shelly-ha) · [Layered leak detection](https://github.com/the-control-cabinet/layered-leak-detection) |
 | **Metering and energy** | [Water metering](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Energy dashboard](https://github.com/the-control-cabinet/home-energy-dashboard) |
 | **Signal conditioning and field wiring** | [Plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) · [VPin power and protection](https://github.com/the-control-cabinet/tukkari-vpin-real-mech-cabinet) |
 | **Wireless field networks and RF** | [Zigbee](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [BLE presence](https://github.com/the-control-cabinet/esp32-ble-presence-network) · [RTL-SDR survey](https://github.com/the-control-cabinet/rtl-sdr-rf-exploration) |
-| **Head-end / integration management** | [HA integration schedule](https://github.com/the-control-cabinet/home-assistant-integration-schedule) |
+| **Head-end / integration management** | [HA integration schedule](https://github.com/the-control-cabinet/home-assistant-integration-schedule) · [Supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) |
 | **OT cyber security** | [Security baseline](https://github.com/the-control-cabinet/smart-home-security-baseline) |
 
 ## Portfolio: top down
@@ -45,7 +69,7 @@
 | [Home Assistant integration schedule (~110 integrations, head-end documentation)](https://github.com/the-control-cabinet/home-assistant-integration-schedule) | ✅ Live |
 | [Smart-home cyber-security & privacy baseline (OT principles)](https://github.com/the-control-cabinet/smart-home-security-baseline) | ✅ Live |
 | [Whole-home energy & utility metering dashboard](https://github.com/the-control-cabinet/home-energy-dashboard) | 📐 Planned |
-| HA + Node-RED supervisory controller | In progress |
+| [HA + Node-RED supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) | 🚧 In progress (design) |
 | Alarm and trend strategy | Planned |
 | Niagara / Tridium familiarisation | Planned |
 
@@ -57,9 +81,10 @@
 | [AI vision automations (vision as a sensor)](https://github.com/the-control-cabinet/ai-vision-automations) | ✅ Live (local detection planned) |
 | [Fault diagnosis case study – Evohome permanent 5 °C override](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration#4-part-c--fault-case-study-the-permanent-5-c-override) | ✅ Complete |
 | [Tukkari VPin – real-mech cabinet (power, protection, I/O, instrumentation)](https://github.com/the-control-cabinet/tukkari-vpin-real-mech-cabinet) | ✅ Running |
-| Multi-zone optimum start/stop | Planned |
+| [Multi-zone optimum start/stop (supervisory, over Evohome/RAMSES-II)](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) | 📐 Design stage |
 | Duty/standby pump rotation | In progress |
-| [OpenTherm boiler control – weather comp + PID with anti-hunt, alongside two Evohome controllers](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) | 📐 Design stage |
+| [PID loop with anti-hunt (DIN-rail rig exercise)](https://github.com/the-control-cabinet/pid-anti-hunt-control-rig) | 📐 Design stage |
+| [OpenTherm boiler control – weather comp + PID, alongside two Evohome controllers](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) | 📐 Design stage |
 | Plant state machine and interlocks | Planned |
 | Trend IQ411 commissioning | Planned |
 | PLC re-implementation (TIA Portal / CODESYS) | Planned |
