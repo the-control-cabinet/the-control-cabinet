@@ -84,7 +84,7 @@ flowchart LR
 | **Metering and energy** | [Water metering](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Energy dashboard](https://github.com/the-control-cabinet/home-energy-dashboard) |
 | **Signal conditioning and field wiring** | [Plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) · [VPin power and protection](https://github.com/the-control-cabinet/tukkari-vpin-real-mech-cabinet) |
 | **Wireless field networks and RF** | [Zigbee](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [BLE presence](https://github.com/the-control-cabinet/esp32-ble-presence-network) · [RTL-SDR survey](https://github.com/the-control-cabinet/rtl-sdr-rf-exploration) |
-| **Head-end / integration management** | [HA integration schedule](https://github.com/the-control-cabinet/home-assistant-integration-schedule) · [Supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) |
+| **Head-end / integration management** | [HA integration schedule](https://github.com/the-control-cabinet/home-assistant-integration-schedule) · [Supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) · [Areas, dashboards and automations](https://github.com/the-control-cabinet/ha-areas-dashboards-automations) |
 | **OT cyber security** | [Security baseline](https://github.com/the-control-cabinet/smart-home-security-baseline) |
 
 ## Portfolio: top down
@@ -102,6 +102,7 @@ flowchart LR
 | [Plant-room graphics (BMS-style HMI)](https://github.com/the-control-cabinet/plant-room-graphics-hmi) | 📐 Design stage |
 | [Sequence of operation: heating and DHW (as-is / to-be)](https://github.com/the-control-cabinet/heating-sequence-of-operation) | 📐 Design stage |
 | [O&M manual / handover pack](https://github.com/the-control-cabinet/om-manual-handover-pack) | 📐 Design stage |
+| [HA areas, dashboards and automations (occupant layer)](https://github.com/the-control-cabinet/ha-areas-dashboards-automations) | 📐 Design stage |
 | [Demand-side energy management (tariff, carbon, peak limiting)](https://github.com/the-control-cabinet/demand-side-energy-management) | 📐 Design stage |
 | [Head-end health and availability monitoring](https://github.com/the-control-cabinet/head-end-health-monitoring) | 📐 Design stage |
 | Niagara / Tridium familiarisation | Planned |
