@@ -98,13 +98,13 @@ flowchart LR
 | [HA + Node-RED supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) | 🚧 In progress (design) |
 | [Alarm and trend strategy (living document)](https://github.com/the-control-cabinet/alarm-and-trend-strategy) | 📐 Living document |
 | [Semantic tagging of points (Project Haystack / Brick)](https://github.com/the-control-cabinet/haystack-semantic-tagging) | 📐 Design stage |
-| [Fault detection and diagnostics (FDD) rules](https://github.com/the-control-cabinet/fdd-rules-heating-plant) | 📐 Design stage |
+| [Fault detection and diagnostics (FDD) rules](https://github.com/the-control-cabinet/fdd-rules-heating-plant) | 🚧 In progress (F1 confirmed on real data) |
 | [Plant-room graphics (BMS-style HMI)](https://github.com/the-control-cabinet/plant-room-graphics-hmi) | 📐 Design stage |
 | [Sequence of operation: heating and DHW (as-is / to-be)](https://github.com/the-control-cabinet/heating-sequence-of-operation) | 📐 Design stage |
-| [O&M manual / handover pack](https://github.com/the-control-cabinet/om-manual-handover-pack) | 📐 Design stage |
+| [O&M manual / handover pack](https://github.com/the-control-cabinet/om-manual-handover-pack) | 🚧 In progress (register, maintenance, records M1-M7) |
 | [HA areas, dashboards and automations (occupant layer)](https://github.com/the-control-cabinet/ha-areas-dashboards-automations) | 📐 Design stage |
 | [Demand-side energy management (tariff, carbon, peak limiting)](https://github.com/the-control-cabinet/demand-side-energy-management) | 📐 Design stage |
-| [Head-end health and availability monitoring](https://github.com/the-control-cabinet/head-end-health-monitoring) | 📐 Design stage |
+| [Head-end health and availability monitoring](https://github.com/the-control-cabinet/head-end-health-monitoring) | 🚧 Partly live (gateway and Wi-Fi health) |
 | [Home network monitoring – AiMesh + per-device Wi-Fi signal and alerts](https://github.com/the-control-cabinet/home-network-monitoring-aimesh-ha) | ✅ Live (channel trial running) |
 | Niagara / Tridium familiarisation | Planned |
 
