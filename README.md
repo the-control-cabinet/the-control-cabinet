@@ -69,7 +69,7 @@ flowchart LR
 | **Supervisory control and scheduling** | [Supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) · [Optimum start/stop](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) |
 | **Measurement and verification (M&V)** | [Energy dashboard](https://github.com/the-control-cabinet/home-energy-dashboard) · [Optimum start/stop](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) · [OpenTherm control](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) |
 | **Commissioning and test records** | Every project: test tables, calibration runs, transmit audits · plans: [OpenTherm 12-test plan](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) · [BLE receiver calibration](https://github.com/the-control-cabinet/esp32-ble-presence-network) |
-| **Fault diagnosis** | [5 °C override case study](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) · [Water meter calibration](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Zigbee availability noise](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [ESPHome watchdog resets](https://github.com/the-control-cabinet/esp32-ble-presence-network) |
+| **Fault diagnosis** | [5 °C override case study](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) · [Water meter calibration](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Zigbee availability noise](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [ESPHome watchdog resets](https://github.com/the-control-cabinet/esp32-ble-presence-network) · [RAMSES gateway RF stall](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration/blob/main/docs/B6-gateway-reliability.md) |
 | **Plant sequences and interlocks** | [Duty/standby + interlocks](https://github.com/the-control-cabinet/din-rail-rig-duty-standby-interlocks) · [Sequence of operation](https://github.com/the-control-cabinet/heating-sequence-of-operation) |
 | **Alarm management** | [Alarm and trend strategy](https://github.com/the-control-cabinet/alarm-and-trend-strategy) |
 | **Fault detection and diagnostics** | [FDD rules](https://github.com/the-control-cabinet/fdd-rules-heating-plant) |
@@ -79,11 +79,11 @@ flowchart LR
 | **Standards and change control** | [ESPHome fleet standards](https://github.com/the-control-cabinet/esphome-fleet-standards) |
 | **Lighting and shading control** | [Lighting and shading](https://github.com/the-control-cabinet/lighting-and-shading-control) |
 | **Energy management and demand response** | [Demand-side energy management](https://github.com/the-control-cabinet/demand-side-energy-management) · [Energy dashboard](https://github.com/the-control-cabinet/home-energy-dashboard) |
-| **System health and resilience** | [Head-end health](https://github.com/the-control-cabinet/head-end-health-monitoring) · [ESPHome fleet standards](https://github.com/the-control-cabinet/esphome-fleet-standards) |
+| **System health and resilience** | [Head-end health](https://github.com/the-control-cabinet/head-end-health-monitoring) · [ESPHome fleet standards](https://github.com/the-control-cabinet/esphome-fleet-standards) · [Home network monitoring](https://github.com/the-control-cabinet/home-network-monitoring-aimesh-ha) |
 | **Life-safety interfaces** | [Fire/CO interface](https://github.com/the-control-cabinet/aico-ei413-shelly-ha) · [Layered leak detection](https://github.com/the-control-cabinet/layered-leak-detection) |
 | **Metering and energy** | [Water metering](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Energy dashboard](https://github.com/the-control-cabinet/home-energy-dashboard) |
 | **Signal conditioning and field wiring** | [Plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) · [VPin power and protection](https://github.com/the-control-cabinet/tukkari-vpin-real-mech-cabinet) |
-| **Wireless field networks and RF** | [Zigbee](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [BLE presence](https://github.com/the-control-cabinet/esp32-ble-presence-network) · [RTL-SDR survey](https://github.com/the-control-cabinet/rtl-sdr-rf-exploration) |
+| **Wireless field networks and RF** | [Zigbee](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [BLE presence](https://github.com/the-control-cabinet/esp32-ble-presence-network) · [RTL-SDR survey](https://github.com/the-control-cabinet/rtl-sdr-rf-exploration) · [Wi-Fi (AiMesh, per-device RSSI)](https://github.com/the-control-cabinet/home-network-monitoring-aimesh-ha) |
 | **Head-end / integration management** | [HA integration schedule](https://github.com/the-control-cabinet/home-assistant-integration-schedule) · [Supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) · [Areas, dashboards and automations](https://github.com/the-control-cabinet/ha-areas-dashboards-automations) |
 | **OT cyber security** | [Security baseline](https://github.com/the-control-cabinet/smart-home-security-baseline) |
 
@@ -105,6 +105,7 @@ flowchart LR
 | [HA areas, dashboards and automations (occupant layer)](https://github.com/the-control-cabinet/ha-areas-dashboards-automations) | 📐 Design stage |
 | [Demand-side energy management (tariff, carbon, peak limiting)](https://github.com/the-control-cabinet/demand-side-energy-management) | 📐 Design stage |
 | [Head-end health and availability monitoring](https://github.com/the-control-cabinet/head-end-health-monitoring) | 📐 Design stage |
+| [Home network monitoring – AiMesh + per-device Wi-Fi signal and alerts](https://github.com/the-control-cabinet/home-network-monitoring-aimesh-ha) | ✅ Live (channel trial running) |
 | Niagara / Tridium familiarisation | Planned |
 
 ### Automation level
