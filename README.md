@@ -151,7 +151,10 @@ Gaps identified in a portfolio review, to be started once more of the design-sta
 | **Mini air-handling unit on the rig:** duct, PWM fan, damper actuator, heater, temperature/humidity, differential-pressure proving; AHU sequence with frost protection and supply-air PID | Hands-on **air-side HVAC** |
 | **Field devices and signals bench:** 0-10 V damper actuator, 4-20 mA transmitter, PT1000, loop calibrator, wired into the Trend IQ411 | Standard **BMS field signals** and point-to-point commissioning |
 | **Commissioning sheet set:** point-to-point, functional and witness sheets applied to the rig and the plant install | **Commissioning** documentation |
-| **Electrical drawings for the rig:** panel schematics, terminal and cable schedules (QElectroTech) | **Drawings** |
+| **Electrical drawings and panel build for the rig:** IEC-symbol schematics (power, control, I/O), terminal and cable schedules, drawing numbers and revisions (QElectroTech); the rig wired to the drawings with ferrules, labels and segregation; continuity, insulation and point-to-point test sheets | **Drawings** and **panel building** |
+| **Motor control and BMS interface demo (24 V control):** DOL with overload, latching start/stop, forward/reverse interlock, star-delta with timer and interlock, hand/off/auto with BMS run, trip and fault contacts | **Motor-starter circuits** and the BMS-to-MCC interface |
+| **VSD control:** small inverter on a pump or fan, controlled by 0-10 V and enable from the Trend IQ411, then over Modbus; fault relay and speed feedback into the BMS | **Variable-speed drives**, as on AHU fans and pumps |
+| **Third-party device integration:** a real Modbus energy meter and the VSD read by the BMS and a PLC, alongside the ESP32 Modbus and BACnet servers | **Modbus / BACnet integration** with real devices |
 | **RAMS:** risk assessments and method statements for the OpenTherm connection and the plant-monitoring install | **Site safety** documentation |
 | **BACnet MS/TP:** RS485 field device discovered and read via YABE | **MS/TP** in practice |
 | **M-Bus metering:** USB M-Bus master with a heat/water meter | **Heat-network** metering |
