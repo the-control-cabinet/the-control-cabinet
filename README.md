@@ -24,6 +24,7 @@
 | Udemy: three BMS fundamentals courses | ✅ Completed |
 | efixx / Crompton Controls: BMS control panels; 3-phase introduction | ✅ Completed |
 | Manufacturer e-learning: Tridium Niagara, KNX eCampus/ETS, Siemens TIA Portal/PLCSIM, Schneider Electric University, CODESYS | 🚧 In progress |
+| **Niagara 4 Technical Certification Program (TCP)** | 📐 Planned (priority paid course: software access and the credential) |
 
 ## Start here
 
@@ -69,7 +70,7 @@ flowchart LR
 | **Supervisory control and scheduling** | [Supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) · [Optimum start/stop](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) |
 | **Measurement and verification (M&V)** | [Energy dashboard](https://github.com/the-control-cabinet/home-energy-dashboard) · [Optimum start/stop](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) · [OpenTherm control](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) |
 | **Commissioning and test records** | Every project: test tables, calibration runs, transmit audits · plans: [OpenTherm 12-test plan](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) · [BLE receiver calibration](https://github.com/the-control-cabinet/esp32-ble-presence-network) |
-| **Fault diagnosis** | [5 °C override case study](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) · [Water meter calibration](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Zigbee availability noise](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [ESPHome watchdog resets](https://github.com/the-control-cabinet/esp32-ble-presence-network) · [RAMSES gateway RF stall](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration/blob/main/docs/B6-gateway-reliability.md) |
+| **Fault diagnosis** | [5 °C override case study](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) · [Water meter calibration](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Zigbee availability noise](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [ESPHome watchdog resets](https://github.com/the-control-cabinet/esp32-ble-presence-network) · [RAMSES gateway RF stall, decoded to a stuck transmit](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration/blob/main/docs/B6-gateway-reliability.md) · [UFH demand decoding](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration/blob/main/docs/B8-ufh-demand-decoding.md) · [NTC noise: a 330 kΩ resistor](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome/blob/main/docs/02-signal-conditioning-and-noise.md) |
 | **Plant sequences and interlocks** | [Duty/standby + interlocks](https://github.com/the-control-cabinet/din-rail-rig-duty-standby-interlocks) · [Sequence of operation](https://github.com/the-control-cabinet/heating-sequence-of-operation) |
 | **Alarm management** | [Alarm and trend strategy](https://github.com/the-control-cabinet/alarm-and-trend-strategy) |
 | **Fault detection and diagnostics** | [FDD rules](https://github.com/the-control-cabinet/fdd-rules-heating-plant) |
@@ -106,7 +107,7 @@ flowchart LR
 | [Demand-side energy management (tariff, carbon, peak limiting)](https://github.com/the-control-cabinet/demand-side-energy-management) | 📐 Design stage |
 | [Head-end health and availability monitoring](https://github.com/the-control-cabinet/head-end-health-monitoring) | 🚧 Partly live (gateway and Wi-Fi health) |
 | [Home network monitoring – AiMesh + per-device Wi-Fi signal and alerts](https://github.com/the-control-cabinet/home-network-monitoring-aimesh-ha) | ✅ Live (channel trial running) |
-| Niagara / Tridium familiarisation | Planned |
+| [Niagara / Tridium familiarisation (#14): the portfolio's devices under a Niagara 4 station](https://github.com/the-control-cabinet/niagara-tridium-familiarisation) | 📐 Design stage (via the Niagara 4 TCP) |
 
 ### Automation level
 | Project | Status |
@@ -121,18 +122,18 @@ flowchart LR
 | [ESPHome fleet standards (13 controllers)](https://github.com/the-control-cabinet/esphome-fleet-standards) | ✅ Live (documenting) |
 | [PID loop with anti-hunt (DIN-rail rig exercise)](https://github.com/the-control-cabinet/pid-anti-hunt-control-rig) | 📐 Design stage |
 | [OpenTherm boiler control – weather comp + PID, alongside two Evohome controllers](https://github.com/the-control-cabinet/opentherm-boiler-control-esphome) | 📐 Design stage |
-| [Trend IQ411 commissioning](https://github.com/the-control-cabinet/trend-iq411-commissioning) | 📐 Planned |
+| [Trend IQ411 commissioning](https://github.com/the-control-cabinet/trend-iq411-commissioning) | 📐 Planned (first: SET access via a Trend partner; check the IQ411's BACnet/IP support) |
 | [Lighting and solar-shading control](https://github.com/the-control-cabinet/lighting-and-shading-control) | 📐 Design stage |
-| [PLC re-implementation – all four IEC 61131-3 languages (#13)](https://github.com/the-control-cabinet/plc-reimplementation-iec61131) | 📐 Design stage |
+| [PLC re-implementation – all four IEC 61131-3 languages (#13)](https://github.com/the-control-cabinet/plc-reimplementation-iec61131) | 📐 Design stage (software-only; optional S7-1200 DC/DC/DC later) |
 
 ### Field level
 | Project | Status |
 |---|---|
 | [Evohome heating controls & HA integration (cloud → RAMSES-II, incl. fault case study)](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) | ✅ Complete |
-| [Heating plant monitoring – boiler, cylinders, safety devices (ESPHome)](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | 🚧 In progress |
+| [Heating plant monitoring – boiler, cylinders, safety devices (ESPHome)](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | 🚧 In progress (pressure calibrated, tundishes and outlet probe commissioned) |
 | [Mains water metering – Modbus RTU](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) | ✅ Complete |
 | [Modbus TCP data collector](https://github.com/the-control-cabinet/modbus-tcp-data-collector) | ✅ Complete |
-| [BACnet/IP network explorer](https://github.com/the-control-cabinet/bacnet-ip-network-explorer) | ✅ Complete |
+| [BACnet/IP network explorer](https://github.com/the-control-cabinet/bacnet-ip-network-explorer) | ✅ Complete (v2 planned: HA BACnet integration against YABE's simulator) |
 | [Fire & CO alarm interface – Aico Ei413 → Shelly → HA](https://github.com/the-control-cabinet/aico-ei413-shelly-ha) | ✅ Complete |
 | [Portable aircon – Tuya data-point map, local control](https://github.com/the-control-cabinet/localtuya-portable-aircon-dp-map) | ✅ Complete |
 | [Zigbee network migration – ZHA → Zigbee2MQTT (93 devices)](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) | ✅ Complete |
