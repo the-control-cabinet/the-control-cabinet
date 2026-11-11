@@ -31,7 +31,7 @@
 | If you have five minutes | Why |
 |---|---|
 | [Evohome heating controls & RAMSES-II integration](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) | Real HVAC controls, protocol-level integration, a full fault case study |
-| [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | Plant-room points list, signal conditioning, boiler state detection; the measurement layer for the OpenTherm control design |
+| [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | Plant-room points list with an as-built wiring schematic, signal conditioning, boiler state detection, cylinder stratification; the measurement layer for the OpenTherm control design |
 | [Mains water metering – Modbus RTU](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) | Modbus RTU field device, calibration against measured volumes, metering dashboards |
 
 ## Heating controls: delivery sequence
@@ -49,7 +49,7 @@ flowchart LR
 
 | Step | Project | Status |
 |---|---|---|
-| A | [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | 🚧 In progress |
+| A | [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | 🚧 In progress (28 points; control-room board as-built) |
 | B | [HA + Node-RED supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) | 🚧 In progress (design) |
 | C | [Multi-zone optimum start/stop](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) | 📐 Design stage |
 | D | [PID with anti-hunt: rig exercise](https://github.com/the-control-cabinet/pid-anti-hunt-control-rig) | 📐 Design stage |
@@ -99,7 +99,7 @@ flowchart LR
 | [HA + Node-RED supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) | 🚧 In progress (design) |
 | [Alarm and trend strategy (living document)](https://github.com/the-control-cabinet/alarm-and-trend-strategy) | 📐 Living document |
 | [Semantic tagging of points (Project Haystack / Brick)](https://github.com/the-control-cabinet/haystack-semantic-tagging) | 📐 Design stage |
-| [Fault detection and diagnostics (FDD) rules](https://github.com/the-control-cabinet/fdd-rules-heating-plant) | 🚧 In progress (F1 confirmed on real data) |
+| [Fault detection and diagnostics (FDD) rules](https://github.com/the-control-cabinet/fdd-rules-heating-plant) | 🚧 In progress (F1-F20; short cycling measured) |
 | [Plant-room graphics (BMS-style HMI)](https://github.com/the-control-cabinet/plant-room-graphics-hmi) | 📐 Design stage |
 | [Sequence of operation: heating and DHW (as-is / to-be)](https://github.com/the-control-cabinet/heating-sequence-of-operation) | 📐 Design stage |
 | [O&M manual / handover pack](https://github.com/the-control-cabinet/om-manual-handover-pack) | 🚧 In progress (register, maintenance, records M1-M7) |
@@ -113,7 +113,7 @@ flowchart LR
 | Project | Status |
 |---|---|
 | [Indoor air quality monitoring + demand-controlled ventilation](https://github.com/the-control-cabinet/indoor-air-quality-monitoring) | 🚧 In progress |
-| [Layered leak detection](https://github.com/the-control-cabinet/layered-leak-detection) | 🚧 Partly live |
+| [Layered leak detection](https://github.com/the-control-cabinet/layered-leak-detection) | 🚧 Layers 1, 2 and 4 live |
 | [AI vision automations (vision as a sensor)](https://github.com/the-control-cabinet/ai-vision-automations) | ✅ Live (local detection planned) |
 | [Fault diagnosis case study – Evohome permanent 5 °C override](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration#4-part-c--fault-case-study-the-permanent-5-c-override) | ✅ Complete |
 | [Tukkari VPin – real-mech cabinet (power, protection, I/O, instrumentation)](https://github.com/the-control-cabinet/tukkari-vpin-real-mech-cabinet) | ✅ Running |
