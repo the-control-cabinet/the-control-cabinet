@@ -31,7 +31,7 @@
 | If you have five minutes | Why |
 |---|---|
 | [Evohome heating controls & RAMSES-II integration](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) | Real HVAC controls, protocol-level integration, a full fault case study |
-| [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | Plant-room points list with an as-built wiring schematic, signal conditioning, boiler state detection, cylinder stratification; the measurement layer for the OpenTherm control design |
+| [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | Plant-room points list with an as-built wiring schematic, signal conditioning, boiler state detection, cylinder stratification and a per-cylinder hot water estimate, and live alerts mapped to FDD rules; the measurement layer for the OpenTherm control design |
 | [Mains water metering – Modbus RTU](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) | Modbus RTU field device, calibration against measured volumes, metering dashboards |
 
 ## Heating controls: delivery sequence
@@ -49,7 +49,7 @@ flowchart LR
 
 | Step | Project | Status |
 |---|---|---|
-| A | [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | 🚧 In progress (28 points; control-room board as-built) |
+| A | [Heating plant monitoring](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome) | 🚧 In progress (28 points; both cylinders commissioned; 23-rule alerts package live) |
 | B | [HA + Node-RED supervisory layer](https://github.com/the-control-cabinet/ha-node-red-supervisory-layer) | 🚧 In progress (design) |
 | C | [Multi-zone optimum start/stop](https://github.com/the-control-cabinet/optimum-start-stop-supervisory) | 📐 Design stage |
 | D | [PID with anti-hunt: rig exercise](https://github.com/the-control-cabinet/pid-anti-hunt-control-rig) | 📐 Design stage |
@@ -73,7 +73,7 @@ flowchart LR
 | **Fault diagnosis** | [5 °C override case study](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration) · [Water meter calibration](https://github.com/the-control-cabinet/mains-water-metering-modbus-rtu) · [Zigbee availability noise](https://github.com/the-control-cabinet/zigbee-network-migration-z2m) · [ESPHome watchdog resets](https://github.com/the-control-cabinet/esp32-ble-presence-network) · [RAMSES gateway RF stall, decoded to a stuck transmit](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration/blob/main/docs/B6-gateway-reliability.md) · [UFH demand decoding](https://github.com/the-control-cabinet/evohome-heating-controls-ramses-integration/blob/main/docs/B8-ufh-demand-decoding.md) · [NTC noise: a 330 kΩ resistor](https://github.com/the-control-cabinet/heating-plant-monitoring-esphome/blob/main/docs/02-signal-conditioning-and-noise.md) |
 | **Plant sequences and interlocks** | [Duty/standby + interlocks](https://github.com/the-control-cabinet/din-rail-rig-duty-standby-interlocks) · [Sequence of operation](https://github.com/the-control-cabinet/heating-sequence-of-operation) |
 | **Alarm management** | [Alarm and trend strategy](https://github.com/the-control-cabinet/alarm-and-trend-strategy) |
-| **Fault detection and diagnostics** | [FDD rules](https://github.com/the-control-cabinet/fdd-rules-heating-plant) |
+| **Fault detection and diagnostics** | [FDD rules](https://github.com/the-control-cabinet/fdd-rules-heating-plant) (first rules live as alerts) |
 | **Semantic data (Haystack / Brick)** | [Semantic tagging](https://github.com/the-control-cabinet/haystack-semantic-tagging) |
 | **Graphics / HMI** | [Plant-room graphics](https://github.com/the-control-cabinet/plant-room-graphics-hmi) |
 | **Documentation and handover (O&M)** | [O&M handover pack](https://github.com/the-control-cabinet/om-manual-handover-pack) · [Sequence of operation](https://github.com/the-control-cabinet/heating-sequence-of-operation) |
